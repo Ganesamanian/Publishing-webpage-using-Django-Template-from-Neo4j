@@ -8,13 +8,6 @@
     <li><a href="#instructions-to-Run-this-repository">Instructions to Run this repository</a></li>
     <li>
       <a href="#how-to-create-the-template">How to create the template</a>
-      <ul>
-        <li><a href="#create-documented-code">Create documented code</a></li>
-        <li><a href="#setup-sphinx-project">Setup sphinx project</a></li>
-        <li><a href="#configure-sphinx-documentation-builder">Configure sphinx documentation builder</a></li>
-        <li><a href="#configure-the-`.rst`-files">Configure the `.rst` files</a></li>
-        <li><a href="#Build-the-documentation-in-HTML-and/or-Latex">Build the documentation in HTML and/or Latex</a></li>
-      </ul>
     </li>
     
   </ol>
