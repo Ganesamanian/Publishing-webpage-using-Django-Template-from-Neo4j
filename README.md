@@ -73,7 +73,7 @@ This section doesn't deal with how to create basic template, but explains how th
    
    
     ```python
-    from django.shortcuts import render
+        from django.shortcuts import render
 	from django.http import HttpResponse
 	from django.views import generic
 	from myapp.models import *
@@ -110,12 +110,6 @@ This section doesn't deal with how to create basic template, but explains how th
 		image_list = []
 
 
-
-		# for uid1 in query_page:
-		#     url_list.append(Page.nodes.get(page_uid = uid1).page_url)
-		#     name_list.append(Page.nodes.get(page_uid = uid1).page_name)
-
-
 		for uid2 in query_resultpage:
 		    url_list.append(Resultpage.nodes.get(resultpage_uid = uid2).resultpage_url)
 		    name_list.append(Resultpage.nodes.get(resultpage_uid = uid2).resultpage_name)
@@ -135,9 +129,11 @@ This section doesn't deal with how to create basic template, but explains how th
 		run_list=zip(name_list, url_list, image_list)
 		
 		return run_list
-    ```
+
+   ```
  
- 4. The above code block used to render the data from neo4j to webpage in table format, alos it process the pages about and home.
+ 4. The above code block used to render the data from neo4j to webpage in table format, 
+ also it process the pages about and home.
  
  5. Now open urls.py from the same path and copy the below code block
  
@@ -155,7 +151,7 @@ This section doesn't deal with how to create basic template, but explains how th
 
 	]
     
-    ```
+ ```
  
  5. The above code block used to redirect the url to the tableview class in views.py
  
@@ -169,7 +165,7 @@ This section doesn't deal with how to create basic template, but explains how th
 	    path('admin/', admin.site.urls),
 	    path('Myapp/', include('myapp.urls')),
 	]
-    ```
+  ```
     
 7. This used to provide two pages or links for the webpage where the Myapp link redirects to urls.py in the app folder which in turn projects the webapge.
 
