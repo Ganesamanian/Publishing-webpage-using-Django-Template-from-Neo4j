@@ -75,9 +75,7 @@ This section doesn't deal with how to create basic template, but explains how th
     ```python
     from django.shortcuts import render
 	from django.http import HttpResponse
-	from django.views import ```
-   python manage.py runserver
-   ```generic
+	from django.views import generic
 	from myapp.models import *
 	from neomodel import db
 	from itertools import chain
@@ -176,13 +174,16 @@ This section doesn't deal with how to create basic template, but explains how th
 
 8. Once the above codings are done run the server inside the `myproject` folder 
 
-  ```
+   ```
    python manage.py runserver
    ```
 
 9. Now you can view the webpage in your localhost as `localhost:8000/Myapp/`
 
+
 10. The webpage should look as below
 ![Template](Image/Template.png)
+
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
