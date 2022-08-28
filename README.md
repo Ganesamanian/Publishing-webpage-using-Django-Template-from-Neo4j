@@ -174,6 +174,7 @@ This section doesn't deal with how to create basic template, but explains how th
 
 8. Once the above codings are done run the server inside the `myproject` folder 
 
+   
    ```
    python manage.py runserver
    ```
