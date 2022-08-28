@@ -144,7 +144,6 @@ This section doesn't deal with how to create basic template, but explains how th
  ```python
         from django.urls import path
 	from . import views
-
 	
 	app_name = 'myapp'
 
@@ -155,7 +154,9 @@ This section doesn't deal with how to create basic template, but explains how th
 		),
 
 	]
+    
     ```
+ 
  5. The above code block used to redirect the url to the tableview class in views.py
  
  6. Now navigate back to `myproject`, inside that open urls.py and copy the below code block
